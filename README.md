@@ -1,76 +1,73 @@
-🍕 Pizza Sales SQL Analysis
-SQL Data Analytics Project using MySQL
+# 🍕 Pizza Sales SQL Analysis
 
-📌 Project Overview
-This project analyzes pizza sales data using MySQL. The analysis uses multiple related CSV datasets to answer business questions related to orders, revenue, pizza prices, sizes, categories, quantities, and sales performance. The project contains 13 SQL analysis questions covering basic to intermediate SQL concepts.
+### SQL Data Analytics Project using MySQL
 
-🎯 Project Objective
-The main objective of this project is to use SQL to analyze pizza sales data and extract meaningful information from the dataset.
+A SQL-based data analytics project that analyzes pizza sales data to identify **sales trends, revenue performance, popular pizzas, customer preferences, and category-wise performance**.
 
-The analysis focuses on:
+## 🎯 Objectives
 
-📦 Order volume
-💰 Revenue generation
-🍕 Pizza sales
-📏 Pizza size preferences
-🗂️ Category-wise sales
-⏰ Order patterns by hour
-📈 Revenue performance
-🏆 Top-performing pizza types
-🛠️ Tools & Technologies
-Tool	Purpose
-MySQL	Data analysis and SQL queries
-SQL	Data querying and analysis
-CSV	Source datasets
-GitHub	Project version control and portfolio
-📂 Dataset
-The project contains four related datasets:
+* Analyze total orders and revenue
+* Identify top-selling pizza types
+* Analyze pizza size and category preferences
+* Study hourly order patterns
+* Calculate category-wise revenue
+* Find top revenue-generating pizzas
+* Analyze cumulative revenue over time
 
-orders.csv – Order date and time information
-order_details.csv – Order details and pizza quantities
-pizzas.csv – Pizza size and price information
-pizza_types.csv – Pizza names, categories, and ingredients
-🔍 SQL Analysis
-The project answers questions such as:
+## 🛠️ Tools & Technologies
 
-What is the total number of orders?
-What is the total revenue generated?
-Which pizza has the highest price?
-What is the most common pizza size ordered?
-What are the top 5 most ordered pizza types?
-What is the total quantity ordered by pizza category?
-How are orders distributed by hour?
-What is the distribution of pizzas by category?
-What is the average number of pizzas ordered per day?
-What are the top 3 pizza types based on revenue?
-What is the revenue contribution of each category?
-How does cumulative revenue change over time?
-What are the top 3 pizza types by revenue within each category?
-🧠 SQL Concepts Used
-SELECT
-WHERE
-COUNT()
-SUM()
-AVG()
-ROUND()
-GROUP BY
-ORDER BY
-LIMIT
-INNER JOIN
-Subqueries
-Aggregate Functions
-Window Functions
-RANK()
-PARTITION BY
-📁 Project Structure
+* **MySQL**
+* **SQL**
+* **CSV**
+* **GitHub**
 
-🍕 pizza-sales-sql-analysis │ ├── 📂 data │ ├── orders.csv │ ├── order_details.csv │ ├── pizzas.csv │ └── pizza_types.csv │ ├── 📂 sql │ └── pizza_sales_analysis.sql │ ├── 📂 Quaries Output screenshot │ └── 📄 README.md
+## 📂 Dataset
 
-🔗 Dataset Relationships
-orders │ │ order_id ↓ order_details │ │ pizza_id ↓ pizzas │ │ pizza_type_id ↓ pizza_types
+The project uses four related datasets:
 
-Author
+```text
+orders.csv
+order_details.csv
+pizzas.csv
+pizza_types.csv
+```
+
+### Dataset Relationship
+
+```text
+orders
+   ↓ order_id
+order_details
+   ↓ pizza_id
+pizzas
+   ↓ pizza_type_id
+pizza_types
+```
+
+## 🧠 SQL Concepts Used
+
+`SELECT` • `WHERE` • `GROUP BY` • `ORDER BY` • `COUNT()` • `SUM()` • `AVG()` • `ROUND()` • `INNER JOIN` • `Subqueries` • `Window Functions` • `RANK()` • `PARTITION BY`
+
+## 📁 Project Structure
+
+```text
+pizza-sales-sql-analysis/
+├── data/
+├── sql/
+│   └── pizza_sales_analysis.sql
+├── Query Output Screenshots/
+└── README.md
+```
+
+## 🚀 Key Learning
+
+This project helped me practice **SQL querying, relational data analysis, joins, aggregation, business analytics, and advanced window functions** using a real-world sales dataset.
+
+## 👨‍💻 Author
+
 Utkarsh Pathak
 
-License
+## 📄 License
+
 This project is licensed under the MIT Lisence.
+
